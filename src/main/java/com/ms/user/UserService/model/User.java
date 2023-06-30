@@ -1,10 +1,13 @@
 package com.ms.user.UserService.model;
 
+
 public class User {
 	
  private String userId;
  private String userName;
  private String userPhoneNumber;
+ private Post post;
+ private Notification notification;
  
  public User(String userId, String userName, String userPhoneNumber) {
 		super();
@@ -14,6 +17,26 @@ public class User {
 	}
  
  
+public Post getPost() {
+	return post;
+}
+
+
+public void setPost(Post post) {
+	this.post = post;
+}
+
+
+public Notification getNotification() {
+	return notification;
+}
+
+
+public void setNotification(Notification notification) {
+	this.notification = notification;
+}
+
+
 public String getUserId() {
 	return userId;
 }
